@@ -8,10 +8,21 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+const porte = prompt("Informe o porte do cão (pequeno, médio ou grande):").toLowerCase();
+const idadeHumana = parseInt(prompt("Informe a idade do cão em anos humanos:"));
 
     //Processamento
+let idadeCanina;
+if (porte === "pequeno") {                      
+    idadeCanina = idadeHumana * 5;
+} else if (porte === "médio") {     
+    idadeCanina = idadeHumana * 6;  
+} else if (porte === "grande") {    
 
+    idadeCanina = idadeHumana * 7;      
+} else {
+    idadeCanina = "Porte inválido. Por favor, informe pequeno, médio ou grande.";
+}   
     
     //Saída
 

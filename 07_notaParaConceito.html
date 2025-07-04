@@ -10,11 +10,28 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const nota = parseFloat(prompt("Informe a nota do aluno:"));
 
     //Processamento
+    let conceito;
+    if (nota >= 9.0 && nota <= 10.0) {
+        conceito = "A";
+    } else if (nota >= 8.0 && nota < 9.0) {
+        conceito = "B";
+    } else if (nota >= 7.0 && nota < 8.0) {
+        conceito = "C";
 
-    
+    } else if (nota >= 6.0 && nota < 7.0) {
+        conceito = "D";
+    } else if (nota >= 0 && nota < 6.0) {
+        conceito = "E";
+    } else {
+
+
+        conceito = "Nota inválida. Por favor, informe uma nota entre 0 e 10.";
+    }
+
+
     //Saída
 
 </script>

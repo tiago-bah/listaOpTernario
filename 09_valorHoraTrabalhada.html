@@ -8,10 +8,23 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+const horasTrabalhadas = parseFloat(prompt("Informe a quantidade de horas trabalhadas semanalmente:"));
+const valorPorHora = parseFloat(prompt("Informe quanto você recebe por hora trabalhada:")); 
 
     //Processamento
+let salarioFinal;       
+if (horasTrabalhadas <= 45) {
+    salarioFinal = horasTrabalhadas * valorPorHora; 
+} else if (horasTrabalhadas <= 60) {
+    salarioFinal = horasTrabalhadas * valorPorHora * 1.2; //
 
+} else {
+
+    salarioFinal = horasTrabalhadas * valorPorHora * 1.3;
+
+}           
+// Cálculo do valor da hora trabalhada
+const valorHoraTrabalhada = salarioFinal / horasTrabalhadas;        
     
     //Saída
 
